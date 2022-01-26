@@ -1,8 +1,14 @@
 .App {
-  padding: 16px;
+  width: 960px;
+  margin: 16px auto;
 }
 
 .view {
+  border: 1px solid #cccccc;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #cccccc;
+  padding: 16px 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,5 +31,31 @@
   }
   input[type="number"] {
     -moz-appearance: textfield;
+  }
+}
+
+#tab {
+  .tab-list {
+    display: flex;
+  }
+
+  .tab {
+    width: 120px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-weight: bold;
+
+    background-color: #cccccc;
+    transition: background-color 0.2s ease-out;
+
+    &.selected {
+      background-color: #c678dd;
+      transition: background-color 0.2s ease-out;
+    }
+  }
+
+  .display {
+    height: 120px;
+    line-height: 120px;
   }
 }
