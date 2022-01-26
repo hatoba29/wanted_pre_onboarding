@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import AutoComplete from "./component/AutoComplete";
 import ClickToEdit from "./component/ClickToEdit";
 import Modal from "./component/Modal";
