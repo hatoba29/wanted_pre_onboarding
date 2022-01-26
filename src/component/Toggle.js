@@ -1,9 +1,5 @@
 const Toggle = () => {
-  return (
-    <div id="toggle">
-      <h2>Toggle</h2>
-    </div>
-  );
+  return <div id="toggle"></div>;
 };
 
 export default Toggle;
