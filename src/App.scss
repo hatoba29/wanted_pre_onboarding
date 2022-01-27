@@ -50,12 +50,44 @@
 
     &.selected {
       background-color: #c678dd;
-      transition: background-color 0.2s ease-out;
     }
   }
 
   .display {
     height: 120px;
     line-height: 120px;
+  }
+}
+
+#toggle {
+  .toggle-bg {
+    width: 120px;
+    height: 50px;
+    margin-bottom: 16px;
+    border-radius: 25px;
+    background-color: #cccccc;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s ease-out;
+    &.on {
+      background-color: #c678dd;
+    }
+  }
+
+  .toggle-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: white;
+
+    transform: translateX(-35px);
+    transition: transform 0.2s ease-out;
+    &.on {
+      transform: translateX(35px);
+    }
   }
 }
