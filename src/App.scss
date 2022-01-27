@@ -151,3 +151,57 @@
     }
   }
 }
+
+#tag {
+  height: 320px;
+
+  .tag-list {
+    height: 32px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+
+    &.focused {
+      border: 2px solid #c678dd;
+    }
+
+    input {
+      border: none;
+      padding: 0;
+      background-color: #0000;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+
+  .tag {
+    height: 28px;
+    margin-right: 6px;
+    border-radius: 6px;
+    padding: 2px 6px;
+    background-color: #c678dd;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+
+    .del-btn {
+      $r: 16px;
+      height: $r;
+      width: $r;
+      margin-left: 4px;
+      border-radius: $r / 2;
+      background-color: white;
+      cursor: pointer;
+
+      font-size: 12px;
+      line-height: $r;
+      text-align: center;
+      transform: rotate(45deg);
+    }
+  }
+}
